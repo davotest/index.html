@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kỷ Niệm 35 Năm Thành Lập Xứ Đoàn Simon Phân Đắc Hoà</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #fcf8f9; /* Warm soft blush background */
+            --primary-color: #2b4c7e; /* Slate / Soft Navy */
+            --accent-gold: #d4a359; /* Soft Warm Gold */
+            --rose-pink: #d88195; /* Dusty Rose Pink */
+            --soft-pink: #f7e8ec; /* Very soft pastel pink card header/accent */
+            --baby-blue: #89b3d9; /* Gentle Baby Blue accent */
+            --baby-blue-light: #f0f5fa; /* Light baby blue section fill */
+            --text-color: #2c2c2c;
+            --card-bg: #ffffff;
+            --font-heading: 'Cinzel', serif;
+            --font-body: 'Montserrat', sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-body);
+            line-height: 1.8;
+            padding: 20px;
+            background-image: radial-gradient(var(--soft-pink) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px 30px;
+            border-bottom: 2px solid var(--rose-pink);
+            position: relative;
+            background: #ffffff;
+            border-radius: 16px 16px 0 0;
+            box-shadow: 0 4px 15px rgba(216, 129, 149, 0.08);
+        }
+
+        .floral-icon {
+            font-size: 1.5rem;
+            color: var(--rose-pink);
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .badge {
+            display: inline-block;
+            font-family: var(--font-heading);
+            font-size: 0.85rem;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            color: var(--rose-pink);
+            font-weight: 700;
+            margin-bottom: 12px;
+            padding: 4px 18px;
+            border: 1px solid var(--rose-pink);
+            background-color: var(--soft-pink);
+            border-radius: 20px;
+        }
+
+        h1 {
+            font-family: var(--font-heading);
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            line-height: 1.3;
+            margin-bottom: 8px;
+        }
+
+        .sub-title {
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            color: var(--accent-gold);
+            letter-spacing: 2px;
+            margin-top: 5px;
+            font-weight: 600;
+        }
+
+        .divider {
+            width: 80px;
+            height: 2px;
+            background: linear-gradient(to right, var(--rose-pink), var(--baby-blue));
+            margin: 20px auto;
+        }
+
+        .invitation-section {
+            text-align: center;
+            padding: 40px 30px;
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+            margin: 30px 0;
+            border-left: 5px solid var(--rose-pink);
+            border-right: 1px solid #f0e6e8;
+        }
+
+        .invitation-text {
+            font-size: 1.05rem;
+            color: #333;
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: justify;
+            text-align-last: center;
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .detail-card {
+            background: var(--card-bg);
+            padding: 30px 25px;
+            border-radius: 12px;
+            text-align: center;
+            border-top: 4px solid var(--baby-blue);
+            box-shadow: 0 4px 15px rgba(137, 179, 217, 0.12);
+        }
+
+        .detail-card h3 {
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .detail-card p {
+            font-size: 1rem;
+            color: #444;
+        }
+
+        .en-sub {
+            display: block;
+            font-size: 0.82rem;
+            color: #777;
+            font-style: italic;
+            font-weight: normal;
+            margin-top: 2px;
+            text-transform: none;
+            letter-spacing: normal;
+        }
+
+        .rsvp-section {
+            background: var(--card-bg);
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+            border-top: 5px solid var(--rose-pink);
+            margin-bottom: 40px;
+        }
+
+        .rsvp-section h2 {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 2px;
+        }
+
+        .rsvp-section p.note {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+            color: var(--primary-color);
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #dcd6d8;
+            border-radius: 8px;
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            background-color: var(--baby-blue-light);
+            transition: border-color 0.2s, background-color 0.2s;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--rose-pink);
+            background-color: #fff;
+        }
+
+        button.btn-submit {
+            width: 100%;
+            background: linear-gradient(135deg, var(--rose-pink), #c76f84);
+            color: #ffffff;
+            border: none;
+            padding: 14px;
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: opacity 0.2s, transform 0.1s;
+            box-shadow: 0 4px 12px rgba(216, 129, 149, 0.3);
+        }
+
+        button.btn-submit:hover {
+            opacity: 0.95;
+            transform: translateY(-1px);
+        }
+
+        .status-message {
+            margin-top: 15px;
+            text-align: center;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            padding-bottom: 40px;
+            font-size: 0.85rem;
+            color: #777;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.7rem; }
+            .invitation-section { padding: 25px 18px; }
+            .rsvp-section { padding: 30px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <span class="floral-icon">🌸 🌿 🌸</span>
+            <div class="badge">Tiệc Kỷ Niệm 35 Năm <span style="font-size:0.75rem; font-weight:normal;">/ 35th Anniversary Gala</span></div>
+            <h1>XỨ ĐOÀN SIMON PHÂN ĐẮC HOÀ</h1>
+            <div class="sub-title">1991 – 2026</div>
+            <div class="divider"></div>
+        </header>
+
+        <!-- Short Invitation Message -->
+        <section class="invitation-section">
+            <p class="invitation-text">
+                Nhân dịp kỷ niệm 35 năm thành lập Xứ Đoàn Simon Phân Đắc Hoà, Ban Quản Trị và Ban Huynh Trưởng trân trọng kính mời Cha Tuyên Úy, quý Sơ Trợ Úy, quý Giảng Viên Giáo Lý, Ban Phụ Huynh, quý Huynh Trưởng và Dự Trưởng đã và đang sinh hoạt trong Xứ Đoàn đến tham dự Tiệc Kỷ Niệm 35 Năm Thành Lập.
+                <br><br>
+                Đây là dịp để chúng ta cùng gặp gỡ, ôn lại những kỷ niệm vui buồn và nhìn lại chặng đường 35 năm đầy ý nghĩa của Xứ Đoàn.
+            </p>
+        </section>
+
+        <!-- Key Event Details (Bilingual) -->
+        <section class="details-grid">
+            <div class="detail-card">
+                <div style="font-size: 1.3rem; margin-bottom: 5px;">📅</div>
+                <h3>Thời Gian <span class="en-sub">Date & Time</span></h3>
+                <p><strong>6:30 PM</strong></p>
+                <p>Thứ Bảy, ngày 10 tháng 10 năm 2026</p>
+                <p class="en-sub">Saturday, 10 October 2026</p>
+            </div>
+            <div class="detail-card">
+                <div style="font-size: 1.3rem; margin-bottom: 5px;">📍</div>
+                <h3>Địa Điểm <span class="en-sub">Location</span></h3>
+                <p><strong>Nhà hàng Silver Pearl <span class="en-sub" style="display:inline;">(Silver Pearl Restaurant)</span></strong></p>
+                <p>1/111 John Street, Cabramatta NSW 2166</p>
+            </div>
+        </section>
+
+        <!-- RSVP Form Section (Bilingual) -->
+        <section class="rsvp-section">
+            <h2>XÁC NHẬN THAM DỰ</h2>
+            <div style="text-align: center; font-family: var(--font-heading); font-size: 1.1rem; color: var(--rose-pink); margin-bottom: 6px; font-weight:600;">RSVP</div>
+            <p class="note">
+                Xin vui lòng điền thông tin để Ban Tổ Chức chuẩn bị đón tiếp chu đáo.<br>
+                <span class="en-sub">Please fill out the form below to assist our host team with preparations.</span>
+            </p>
+
+            <form id="rsvpForm">
+                <div class="form-group">
+                    <label for="fullName">
+                        Họ và Tên / Đơn Vị
+                        <span class="en-sub">Full Name / Organization</span>
+                    </label>
+                    <input type="text" id="fullName" name="fullName" required placeholder="e.g. HT Nguyễn Văn A / John Doe">
+                </div>
+
+                <div class="form-group">
+                    <label for="role">
+                        Vai Trò Sinh Hoạt
+                        <span class="en-sub">Role / Group</span>
+                    </label>
+                    <select id="role" name="role" required>
+                        <option value="" disabled selected>Chọn vai trò / Select role</option>
+                        <option value="Cha Tuyên Úy">Cha Tuyên Úy / Chaplain</option>
+                        <option value="Sơ Trợ Úy">Sơ Trợ Úy / Religious Sister</option>
+                        <option value="Giảng Viên Giáo Lý">Giảng Viên Giáo Lý / Catechist</option>
+                        <option value="Ban Phụ Huynh">Ban Phụ Huynh / Parents Committee</option>
+                        <option value="Huynh Trưởng / Dự Trưởng">Huynh Trưởng / Dự Trưởng (Youth Leader)</option>
+                        <option value="Cựu Huynh Trưởng / Dự Trưởng">Cựu Huynh Trưởng / Dự Trưởng (Former Youth Leader)</option>
+                        <option value="Khác">Khác / Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="attending">
+                        Xác Nhận Tham Dự
+                        <span class="en-sub">Attendance Confirmation</span>
+                    </label>
+                    <select id="attending" name="attending" required>
+                        <option value="" disabled selected>Chọn câu trả lời / Select response</option>
+                        <option value="Sẽ tham dự">Sẽ tham dự / Joyfully Accepts</option>
+                        <option value="Rất tiếc không thể tham dự">Rất tiếc không thể tham dự / Regretfully Declines</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="guestCount">
+                        Số Lượng Tham Dự
+                        <span class="en-sub">Number of Guests</span>
+                    </label>
+                    <input type="number" id="guestCount" name="guestCount" min="1" max="10" value="1">
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">
+                        Ghi Chú / Yêu Cầu Ăn Uống
+                        <span class="en-sub">Notes / Dietary Requirements</span>
+                    </label>
+                    <textarea id="notes" name="notes" rows="3" placeholder="e.g. Vegetarian, seafood allergy, etc."></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit" id="submitBtn">
+                    Gửi Xác Nhận <span style="font-weight:normal; font-size:0.85rem;">/ Submit Response</span>
+                </button>
+            </form>
+            <div id="statusMessage" class="status-message"></div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div style="font-size: 1.2rem; color: var(--rose-pink); margin-bottom: 6px;">🌸</div>
+            <p>Hân hạnh được đón tiếp Quý Vị!</p>
+            <p class="en-sub" style="margin-top:2px;">We look forward to celebrating with you!</p>
+            <p style="margin-top: 8px; font-size: 0.78rem;">Xứ Đoàn Simon Phân Đắc Hoà</p>
+        </footer>
+    </div>
+
+    <script>
+        const GOOGLE_SCRIPT_URL = "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL";
+
+        document.getElementById('rsvpForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.getElementById('submitBtn');
+            const statusMsg = document.getElementById('statusMessage');
+            
+            submitBtn.disabled = true;
+            submitBtn.innerText = "Đang gửi / Submitting...";
+            statusMsg.innerText = "";
+
+            const formData = {
+                fullName: document.getElementById('fullName').value,
+                role: document.getElementById('role').value,
+                attending: document.getElementById('attending').value,
+                guestCount: document.getElementById('guestCount').value,
+                notes: document.getElementById('notes').value
+            };
+
+            if (GOOGLE_SCRIPT_URL === "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL") {
+                setTimeout(() => {
+                    statusMsg.style.color = "green";
+                    statusMsg.innerHTML = "Cảm ơn bạn! Thông tin đã được ghi nhận.<br><span class='en-sub' style='color:green;'>Thank you! Your response has been recorded.</span>";
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = "Gửi Xác Nhận <span style='font-weight:normal; font-size:0.85rem;'>/ Submit Response</span>";
+                    document.getElementById('rsvpForm').reset();
+                }, 1000);
+                return;
+            }
+
+            fetch(GOOGLE_SCRIPT_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData)
+            })
+            .then(() => {
+                statusMsg.style.color = "green";
+                statusMsg.innerHTML = "Cảm ơn bạn! Thông tin xác nhận của bạn đã được gửi thành công.<br><span class='en-sub' style='color:green;'>Thank you! Your response has been submitted successfully.</span>";
+                document.getElementById('rsvpForm').reset();
+            })
+            .catch(error => {
+                statusMsg.style.color = "red";
+                statusMsg.innerHTML = "Có lỗi xảy ra khi gửi. Vui lòng thử lại sau.<br><span class='en-sub' style='color:red;'>An error occurred. Please try again.</span>";
+                console.error("Error:", error);
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = "Gửi Xác Nhận <span style='font-weight:normal; font-size:0.85rem;'>/ Submit Response</span>";
+            });
+        });
+    </script>
+</body>
+</html>
